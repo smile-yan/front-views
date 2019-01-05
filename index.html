@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap 实例</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+  
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+
+  <div class="row">
+    <div class="col-sm-3" style=""></div>
+    <div class="col-sm-6">
+		<h3>输入框组</h3>
+		<p> .input-group .input-group 类来向表单输入框中添加更多的样式，如图标、文本或者按钮，.input-group-prepend 类添加在前面，.input-group-append 添加在后面。</p>
+		<p>使用 .input-group-text 类来设置文本的样式。</p>
+		
+	 <form action="/action_page.php">
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+			<span class="input-group-text">
+				<i class="fa fa-user" style="font-size:24px"></i>
+			</span>
+		  </div>
+		  <input type="text" class="form-control" placeholder="请输入登录名" id="usr" name="username">
+		</div>
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+			<span class="input-group-text">
+				<i class="fa fa-key" style="font-size:20px"></i>
+			</span>
+		  </div>
+		  <input type="text" class="form-control" placeholder="请输入密码" id="usr" name="password1">
+		  
+		</div>
+		<div class="input-group mb-3">
+		  <div class="input-group-prepend">
+			<span class="input-group-text">
+				<i class="fa fa-key" style="font-size:20px"></i>
+			</span>
+		  </div>
+		  <input type="text" class="form-control" placeholder="请再次输入密码" id="usr" name="password2">
+		</div>
+		<div class="row">
+		  <div class="col">
+			<div class="input-group mb-3">
+			  <div class="input-group-prepend">
+				<span class="input-group-text">
+					<i class="fa fa-eye" style="font-size:24px"></i>
+				</span>
+			  </div>
+			  <input type="text" class="form-control" placeholder="请输入验证码" id="usr" name="username">
+			  <img src="http://static.runoob.com/images/mix/cinqueterre.jpg" 
+			  style="padding-left:10px;width:50%;height:34px">
+			</div>  
+		  </div>
+		</div>
+		<button type="submit" class="btn btn-primary" style="width:100%">确认注册</button>
+	  </form>
+	</div>
+    <div class="col-sm-3"></div>
+  </div>
+  
+ 
+</body>
+</html>
