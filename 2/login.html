@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Bootstrap 实例</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"></head>
+	
+    <link rel="stylesheet" href="./css/index.css">
+ 
+  <body>
+    <div class="container mt-3" style="padding-top:40px;">
+      <div class="row">
+        <div class="col-sm-4" style=""></div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-header text-center">
+              <h3>欢迎登录</h3></div>
+            <form action="http://yan.nat300.top/login">
+              <div class="card-body">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-user" style="font-size:24px"></i>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="请输入登录名" id="usr" name="username"></div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="fa fa-key" style="font-size:20px"></i>
+                    </span>
+                  </div>
+                  <input type="password" class="form-control" placeholder="请输入密码" id="usr" name="password1"></div>
+                <div class="row">
+                  <div class="col">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <i class="fa fa-eye" style="font-size:24px"></i>
+                        </span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="请输入验证码" id="usr" name="code">
+                      <img id="captcha_login" src="http://yan.nat300.top/captcha" style="padding-left:10px;width:50%;height:34px"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button type="submit" class="btn btn-primary" style="width:100%">登录</button>
+              <div class="row mt-2">
+                <div class="col-sm-4">
+					<div class="form-check">
+					  <label class="form-check-label">
+						<input class="form-check-input" type="checkbox">记住我
+					  </label>
+					</div>
+				</div>
+                <div class="col-sm-8">
+					<p class="form-control-static text-right">
+						<a href="register.html">忘记密码 </a>
+						<a href="register">免费注册</a>
+					</p>
+				</div>	
+				</div>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+	  
+      <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+      <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	  
+	   <script>
+	  	$(document).ready(function(){
+	  	  $("#captcha_login").click(function(){
+	  			$('#captcha_login').attr("src", "http://yan.nat300.top/captcha");
+	  			// alert("sdf");
+	  	  });
+	  	});
+	  </script>
+  </body>
+
+</html>
